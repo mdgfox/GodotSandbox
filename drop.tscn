@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbeuqwwpf8t5v"]
+
+[ext_resource type="Texture2D" uid="uid://dqa4kn7wn8fj8" path="res://Assets/drop.png" id="1_d88vn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v1501"]
+radius = 25.02
+
+[node name="Drop" type="RigidBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_v1501")
+
+[node name="Image" type="Sprite2D" parent="."]
+position = Vector2(-9.53674e-07, -9.53674e-07)
+scale = Vector2(0.104492, 0.104492)
+texture = ExtResource("1_d88vn")
